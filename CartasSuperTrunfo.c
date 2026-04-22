@@ -13,6 +13,8 @@ int main() {
      float areakm2;
      float pib;
      int pontoturi;
+     float densidadepop;
+     float pibpercap;
 
          
            printf("Digite o nome do estado:");
@@ -37,6 +39,10 @@ int main() {
            scanf("%d", &pontoturi);
 
 
+           densidadepop = populacao / areakm2;
+           pibpercap = pib / populacao;
+
+
            printf("Carta 1:\n");
            printf("Estado:%s\n", estado);
            printf("Codigo:%s\n", codigo);
@@ -45,6 +51,8 @@ int main() {
            printf("Àrea km²:%.2f\n", areakm2);
            printf("PIB:%.2f\n", pib);
            printf("Pontos Turísticos:%d\n", pontoturi);
+           printf("Densidade Populacional:%.2f hab/km²\n", densidadepop);
+           printf("PIB per Capita:%.2f reais\n", pibpercap);
 
 
 
@@ -55,9 +63,11 @@ int main() {
     float areakm22;
     float pib2;
     int pontoturi2;
+    float densidadepop2;
+    float pibpercap2;
 
 
-    printf("Digite o nome do estado:");
+           printf("Digite o nome do estado:");
            scanf("%s", &estado2);
 
            printf("Digite o codigo do estado com uma letra de B a J seguido dos numeros de 01 a 09.");
@@ -78,6 +88,9 @@ int main() {
            printf("Digite o número de pontos turisticos:");
            scanf("%d", &pontoturi2);
 
+           densidadepop2 = populacao2 / areakm22;
+           pibpercap2 = pib2 / populacao2;
+
 
            printf("Carta 2:\n");
            printf("Estado:%s\n", estado2);
@@ -86,7 +99,9 @@ int main() {
            printf("População:%d\n", populacao2);
            printf("Àrea km²:%.2f\n", areakm22);
            printf("PIB:%.2f\n", pib2);
-           printf("Pontos Turísticos:%d", pontoturi2);
+           printf("Pontos Turísticos:%d\n", pontoturi2);
+           printf("Densidade Populacional:%.2f hab/km²\n", densidadepop2);
+           printf("PIB per Capita:%.2f reais\n", pibpercap2);
 
 
   // Área para definição das variáveis para armazenar as propriedades das cidades
@@ -94,6 +109,7 @@ int main() {
   // Área para entrada de dados
 
   // Área para exibição dos dados da cidade
+
 
 return 0;
 } 
